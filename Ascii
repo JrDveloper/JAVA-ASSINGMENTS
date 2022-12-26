@@ -1,0 +1,28 @@
+package Onlineclass;
+import java.util.Scanner;
+public class Ascii {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter any character : ");
+		String str=scanner.next();
+		char ch=str.charAt(0);
+		int ascii=(int)ch;
+		System.out.println(ascii);
+		if(ascii>=65 && ascii <= 90)
+		{
+			System.out.println(ascii +"is capital");
+		}
+		else if(ascii>=97 && ascii <= 122)
+		{
+			System.out.println(ascii + "is smaller");
+		}
+		else if(ascii >=48 && ascii <= 57)
+		{
+			System.out.println(ascii + " is a digit");
+		}
+		else if(ascii>=0 && ascii<=47 || ascii>=58 && ascii<=64 || ascii>=91 && ascii<=96 || ascii>=123 && ascii<=127)
+		{
+			System.out.println(ascii + "is a special character");		}
+	}
+
+}
