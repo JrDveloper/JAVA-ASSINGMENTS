@@ -1,0 +1,25 @@
+package Onlineclass;
+import java.util.Scanner;
+public class GrossSalary {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		int ts,a,b,salary;
+		double da = 0;
+		double hra = 0;
+		System.out.println("Enter the Basic Salary : ");
+		int bs=scanner.nextInt();
+		if(bs<1500)
+		{
+			hra=bs*0.10;
+			da=bs*0.90;
+		}
+		else if(bs>=1500)
+		{
+			hra=500;
+			da=bs*0.98;
+		}
+		ts=(int) (bs+hra+da);
+		System.out.println("Gross Salary of the Employee is : "+ts);
+	}
+
+}
