@@ -1,0 +1,38 @@
+package Onlineclass;
+import java.util.Scanner;
+public class GradingScale {
+	public static void main(String[] args) {
+		int eng,hnd,maths,sci,eco;
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the marks of 5 subjects : ");
+		System.out.println("English : ");
+		eng=scanner.nextInt();
+		System.out.println("hindi : ");
+		hnd=scanner.nextInt();
+		System.out.println("maths : ");
+		maths=scanner.nextInt();
+		System.out.println("science : ");
+		sci=scanner.nextInt();
+		System.out.println("economics : ");
+		eco=scanner.nextInt();
+		int total=eng+hnd+maths+sci+eco;
+		float percentage=total/5;
+		System.out.println("percent Scored :" +percentage);
+		if((percentage>=60)&&(percentage<=100))
+		{
+			System.out.println("percentage scored : "+percentage);
+		}
+		else if((percentage>=50)&&(percentage<=59))
+		{
+			System.out.println("percentage scored : "+percentage);
+		}
+		else if((percentage>=40)&&(percentage<=49))
+		{
+			System.out.println("percentage scored : "+percentage);
+		}
+		else
+		{
+			System.out.println("percentage scored : "+percentage);
+		}
+	}
+}
