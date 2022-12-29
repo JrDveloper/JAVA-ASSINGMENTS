@@ -1,0 +1,21 @@
+package Onlineclass;
+import java.util.Scanner;
+public class Triangle {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the First Angle :");
+		int angle1=scanner.nextInt();
+		System.out.println("Enter the Second Angle :");
+		int angle2=scanner.nextInt();
+		System.out.println("Enter the Third Angle :");
+		int angle3=scanner.nextInt();
+		if(angle1+angle2+angle3==180)
+		{
+			System.out.println("Triangle is Valid");
+		}
+		else
+		{
+			System.out.println("Triangle is Not Valid");
+		}
+	}
+}
