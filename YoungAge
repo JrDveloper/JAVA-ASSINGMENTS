@@ -1,0 +1,26 @@
+package Onlineclass;
+import java.util.Scanner;
+public class YoungAge {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the age of Shiva :");
+		int ShivaAge=scanner.nextInt();
+		System.out.println("Enter the age of Ram :");
+		int RamAge=scanner.nextInt();
+		System.out.println("Enter the age of Hari :");
+		int HariAge=scanner.nextInt();
+		
+		if((ShivaAge<RamAge)&&(ShivaAge<HariAge))
+		{
+			System.out.println("Shiva is young");
+		}
+		else if ((RamAge<ShivaAge)&&(RamAge<HariAge))
+		{
+			System.out.println("Ram is young");
+		}
+		else
+		{
+			System.out.println("Hari is young");
+		}
+	}
+}
