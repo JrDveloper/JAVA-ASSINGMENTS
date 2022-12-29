@@ -1,0 +1,26 @@
+package Onlineclass;
+import java.util.Scanner;
+public class LossorProfit {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the Cost Price : ");
+		int CostPrice=scanner.nextInt();
+		System.out.println("Enter the Selling Price :");
+		int SellingPrice=scanner.nextInt();
+		int profit,loss;
+		if(SellingPrice > CostPrice)
+		{
+			profit=SellingPrice - CostPrice;
+			System.out.println("Profit : "+profit);
+		}
+		else if(SellingPrice < CostPrice)
+		{
+			loss=CostPrice - SellingPrice;
+			System.out.println("Loss : "+loss);
+		}
+		else if(SellingPrice==CostPrice)
+		{
+			System.out.println("neither Loss nor Profit");
+		}
+	}
+}
