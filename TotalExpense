@@ -1,0 +1,24 @@
+package Onlineclass;
+import java.util.Scanner;
+public class TotalExpense {
+	public static void main(String[] args) {
+		float a;
+		double dis;
+		double ta;
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the amount of item ");
+		a=scanner.nextFloat();
+		System.out.println("Amount is "+a);
+		if (a>5000)
+		{
+			System.out.println("Eligible for 10% Discount ");
+			dis=a*0.1;
+			ta=a-dis;
+			System.out.println("Your Total Amount is : "+ta);
+		}
+		else
+		{
+			System.out.println("You do not get any discount");
+		}
+	}
+}
