@@ -1,11 +1,20 @@
 package Onlineclass;
 import java.util.Scanner;
-public class AbsNumber {
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in); 
-		  System.out.print("Enter number: ");
-		  int number = scanner.nextInt();//local Variable
+public class AbsNUmber
+{
+	public static void main(String[] args) 
+	{
+	Scanner scanner = new Scanner(System.in); 
+	  System.out.print("Enter number: ");
+	  int number = scanner.nextInt();
 		  if(number<0)
-		  System.out.println("Absolute numeric of given number '"+number+"': "+(-(number)));
+		  {
+		   int abs=-number;
+		  System.out.println("Absolute numeric of given number "+number+" is "+abs);
+		  }
+		  else 
+		  {
+		  System.out.println("Absolute numeric of given number "+number+" is "+number);
+		  }
 	}
 }
