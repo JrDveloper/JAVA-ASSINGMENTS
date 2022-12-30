@@ -1,6 +1,6 @@
 package Onlineclass;
 import java.util.Scanner;
-public class AbsNUmber
+public class AbsNumber
 {
 	public static void main(String[] args) 
 	{
